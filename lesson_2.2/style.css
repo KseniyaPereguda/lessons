@@ -1,0 +1,62 @@
+body {
+	Font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	padding: 30px;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	color: rgb(63, 60, 60);
+}
+
+div .img {
+	border-radius: 15px;
+	width: 500px;
+}
+
+.picture + .article {
+	color: rgb(112, 107, 159);
+}
+
+.info h2 {
+	font-size: 30px;
+	color: rgb(77, 77, 77);
+}
+
+.items .item a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.items ~ .paragraph {
+	color: rgb(135, 119, 151);
+}
+
+[class*="part"] {
+	background-color: rgba(155, 142, 164, 0.3);
+}
+
+#uppercase {
+	text-transform: uppercase;
+}
+
+.part > .color {
+	color: rgb(186, 96, 169);
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.italic.color {
+	font-style: italic;
+}
+
+[title="Периодическое голодание"] {
+	color:  rgb(84, 19, 80);
+}
+
+.underlined {
+	text-decoration: underline;
+} 
