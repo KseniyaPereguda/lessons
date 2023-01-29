@@ -1,0 +1,103 @@
+@import url("reset.css");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	color: #495057;
+	line-height: 1.67;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+h2 {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+}
+.title {
+	color: #212529;
+	width: 393px;
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+.item {
+	line-height: 2.08;
+}
+.items {
+	margin-bottom: 50px;
+}
+.item::before {
+	content: "+";
+	font-weight: 500;
+	width: 9px;
+	height: 25px;
+	margin-right: 10px;
+}
+.part-2 {
+	margin-bottom: 100px;
+}
+.girl {
+	margin-bottom: 30px;
+	position: relative;
+}
+.button,
+.button-part3 {
+	color: #F8F9FA;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 2.5;
+	text-align: center;
+	padding: 3px 12.09px 2px 12.77px;
+	background: rgba(33, 37, 41, 0.3);
+	border-radius: 3px;
+	position: absolute;
+	top: 30px;
+	/* right: 30px;  */
+	left: 300px;
+}
+.main-part {
+	width: 393px;
+}
+.date {
+	margin-bottom: 15px;
+}
+.titile-part2 {
+	color: #CCD5AE;
+	margin-bottom: 15px;
+}
+.text {
+	margin-bottom: 15px;
+}
+.line {
+	width: 390px;
+	height: 0px;
+	border: 1px solid #E5E5E5;
+	margin-bottom: 15px;
+}
+.part-3 {
+	padding-bottom: 100px;
+}
+.girl-part3 {
+	background-image: url("../img/girl.png");
+	background-repeat: no-repeat;
+	width: 393px;
+	height: 250px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+/* У МЕНЯ ЕСТЬ ВОПРОС */
+
+/* Почему для 
+.button {
+	right:30px 
+} 
+не работает, а для 
+.button-part-3 {
+	right:30px 
+}
+	работает */
