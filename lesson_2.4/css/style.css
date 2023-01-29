@@ -1,0 +1,134 @@
+@import "null.css";
+@font-face {
+	font-family: "Cony";
+	src: url("../fonts/Cony.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria' ;
+	src: url("../fonts/Geometria.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+body {
+	font-family: "Geometria", sans-serif;
+	font-size: 16px;
+	padding: 30px 30px 0 30px;
+	background-color: rgb(212, 198, 209);
+	line-height: 1.2;
+}
+main {
+	padding-bottom: 200px;
+}
+.title {
+	font-family: "Cony", sans-serif;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.title:hover {
+	text-shadow: 5px 5px 5px gray;
+}
+p:not(:last-child) {
+	margin-bottom: 20px;
+}
+.paragraphs {
+	margin-bottom: 30px;
+}
+p:first-child {
+	color: rgb(169, 137, 137);
+}
+p:first-of-type {
+	background-color: rgba(186, 186, 235, 0.495);
+}
+p:last-child {
+	color: rgb(71, 71, 71);
+}
+p:last-of-type {
+	background-color: rgb(145, 124, 165);
+}
+p:nth-child(3) {
+	border: 2px solid blueviolet;
+}
+p:nth-child(even) {
+	border: 2px solid rgb(22, 20, 24);
+}
+p:nth-child(odd) {
+	border-radius: 5px;
+}
+p:first-child::first-line {
+	color: rgb(248, 248, 248);
+}
+p::first-letter {
+	font-size: 20px;
+}
+.link::before {
+	content: "➜";
+}
+p:last-child::after {
+	content: " ٩(｡•́‿•̀｡)۶";
+}
+.link {
+	color: blueviolet;
+}
+.link:active {
+	text-shadow: 1px 1px 1px rgb(105, 49, 113);
+}
+.link:visited {
+	color: rgb(16, 5, 5);
+}
+.bold {
+	font-weight: 700;
+}
+.img:target {
+	border: 3px solid #6e4379;
+}
+
+.relative {
+	width: 160px;
+	height: 100px;
+	background-color: aquamarine;
+	position: relative;
+	top: 70px;
+	left: 30px;
+}
+.absolute {
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	background-color: blanchedalmond;
+	top: 10px;
+	left: 50px;
+}
+.block {
+	position: relative;
+	width: 500px;
+	height: 300px;
+	background-color: chocolate;
+	top: 100px;
+	left: 100px;
+}
+.block-2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: azure;
+	right: 60px;
+	bottom: 40px;
+}
+.fixed {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background-color: cornflowerblue;
+	top: 15px;
+	left: 300px;
+}
+.sticky {
+	position: sticky;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(89, 128, 128);
+	top: 0px;
+}
