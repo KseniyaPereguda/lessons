@@ -1,1 +1,167 @@
 @import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fraunces:400&display=swap");
+
+body {
+	font-family: "Inter";
+}
+[class*="__container"] {
+	max-width: 1130px;
+	margin: 0 auto;
+}
+.header__container {
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+	font-size: 15px;
+	line-height: 1.6;
+}
+.header__logo {
+	margin-right: 36px;
+}
+.logo img {
+	max-width: 100%;
+}
+.header__menu {
+	flex: 1 1 auto;
+}
+.header__items {
+	display: flex;
+	gap: 25px;
+	color: #33383F;
+}
+.header__button {
+	color: #0070A0;
+	margin-right: 31px;
+}
+.button {
+	background-color: #0070A0;
+	color: #FFFFFF;
+}
+.button--size {
+	min-width: 139px;
+	padding: 6px 20px;
+}
+.companies__container {
+	padding: 40px 0;
+}
+.companies__title {
+	color: #1F1F1F;
+	font-size: 24px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.2px;
+	margin-bottom: 24px;
+}
+.companies__row {
+	display: flex;
+	justify-content: center;
+	gap: 61px;
+}
+.cards {
+	display: flex;
+	padding: 116px 0 119px;
+	gap: 32px;
+}
+.card {
+	padding: 32px 32px 40px;
+	font-family: "Fraunces";
+}
+.card__img {
+	width: 55px;
+	height: 55px;
+	margin-bottom: 8px;
+}
+.card__img img {
+	max-width: 100%;
+}
+.card--yellow {
+	background-color: #FAEA73;
+}
+.card--blue {
+	background-color: #CCEFF6;
+}
+.card--pink {
+	background-color: #F7CEDC;
+}
+.card__title {
+	font-size: 25px;
+	line-height: 1.24;
+	letter-spacing: 0.2px;
+	color: #1F1F1F;
+	margin-bottom: 11px;
+}
+.card__text {
+	font-size: 15px;
+	line-height: 1.6;
+	letter-spacing: 0.2px;
+}
+.get-smarter {
+	background-color: #F7F9FA;
+}
+.get-smarter__container {
+	padding: 80px 0;
+}
+.title {
+	font-family: 'Fraunces';
+	font-size: 42px;
+	line-height: 1.2;
+	letter-spacing: 0.2px;
+	color: #1F1F1F;
+}
+.get-smarter__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.get-smarter__link {
+	font-family: 'Inter';
+	font-size: 17px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #0070A0;
+}
+.get-smarter__cards {
+	display: flex;
+	gap: 32px;
+}
+.get-smarter__card {
+	font-family: 'Inter';
+	background-color: #FFFFFF;
+	letter-spacing: 0.2px;
+	color: #1F1F1F;
+}
+.get-smarter__img img {
+	min-width: 355px;
+	max-width: 100%;
+}
+.get-smarter__info {
+	padding: 25px 24px 26px 24px;
+}
+.get-smarter__subtitle {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1.3;
+	letter-spacing: 0.4px;
+	color: #2C90C9;
+	background-color: #E6F7FF;
+	padding: 2px 12px 4px 12px;
+	margin-bottom: 8px;
+}
+.get-smarter__title {
+	font-family: 'Fraunces';
+	font-size: 25px;
+	line-height: 1.24;
+	margin-bottom: 11px;
+}
+.get-smarter__text {
+	font-size: 14px;
+	line-height: 1.4;
+	margin-bottom: 13px;
+}
+.get-smarter__date {
+	font-size: 12px;
+	line-height: 1.7;
+}
