@@ -1,0 +1,153 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Overpass:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,600&display=swap");
+
+
+.header {
+	background-color: #6257FE;
+	padding: 17px 0;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-bottom: 100px;
+}
+.header__container {
+	max-width: 1440px;
+	display: flex;
+	padding: 0 23px 0 19px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.logo {
+	display: flex;
+	gap: 10px;
+	color: #FFFFFF;
+}
+.logo__picture {
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	position: relative;
+}
+.logo__picture::after {
+	content: "";
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	top: 10px;
+	left: 10px;
+	background-color: #6257FE;
+	border-radius: 0px 9.5px 9.5px 0px;
+}
+.logo__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.logo__titile {
+	font-family: 'Overpass', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.25;
+}
+.logo__subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 1.33;
+}
+.header__socials {
+	gap: 25px;
+}
+.socials {
+	display: flex;
+	align-items: center;
+}
+.socials__img {
+	max-width: 24px;
+}
+.socials__img img {
+	max-width: 100%;
+}
+.portfolio {
+	margin-bottom: 175px;
+}
+.portfolio__container,
+.team__container {
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.portfolio__caption {
+	text-align: center;
+	margin-bottom: 62px;
+}
+.caption__subtitle {
+	font-family: 'Open Sans';
+	line-height: 1.375;
+	color: #6257FE;
+	margin-bottom: 7px;
+}
+.caption__title {
+	font-family: 'Overpass';
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.27;
+	color: #100C46;
+}
+.portfolio__cards {
+	display: flex;
+	margin: 0 -12px;
+	flex-wrap: wrap;
+}
+.portfolio__card {
+	padding: 0 12px;
+	flex: 0 1 25%;
+}
+.portfolio__card img {
+	max-width: 100%;
+}
+.team__caption {
+	text-align: center;
+	margin-bottom: 62px;
+}
+.team__cards {
+	display: flex;
+	margin: 0 -12px;
+	flex-wrap: wrap;
+}
+.team__card {
+	padding: 0 12px;
+	flex: 0 1 25%;
+	position: relative;
+}
+.card__person img {
+	max-width: 100%;
+}
+.card__info {
+	position: absolute;
+	bottom: 0;
+	left: 12px;
+	display: flex;
+	background: rgba(98, 87, 254, 0.8);
+	padding: 11px 14px 12px 18px;
+	justify-content: space-between;
+	width: calc(100% - 24px);
+}
+.info__name {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	line-height: 2;
+	color: #FFFFFF;
+}
+.info__job {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	line-height: 2.3;
+	color: #FFFFFF;
+}
+.info__socials {
+	gap: 13px
+}
