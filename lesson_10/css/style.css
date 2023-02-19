@@ -1,0 +1,132 @@
+@import url("reset.css");
+
+.content {
+	padding: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-bottom: 50px;
+}
+.button {
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-align: center;
+	border: 2px solid rgb(217, 161, 204);
+	color: rgb(83, 61, 78);
+	max-width: 100px;
+}
+.button:hover {
+	transition-duration: 0.5s;
+}
+.button-1:hover {
+	background-color: rgb(147, 109, 139);
+	color: aliceblue;
+	border: 2px solid rgb(147, 109, 139);		
+}
+.button-2 {
+	background-color: rgb(217, 161, 204);
+}
+.button-2:hover {
+	background-color: inherit;
+	border: 2px solid rgb(217, 161, 204);
+}
+.button-3:hover {
+	box-shadow: 0 0 2px 2px rgb(217, 161, 204);
+}
+.button-4 {
+	position: relative;
+}
+.button-4:hover {
+	background-color: rgb(217, 161, 204);
+	transition-timing-function: ease-in-out;
+	color: azure;
+}
+.button-4::after {
+	content: 'Подсказка';
+	position: absolute;
+	left: 10px;
+	bottom: 39px;
+	color: azure;
+	background-color: rgb(169, 157, 180);
+	padding: 5px 10px;
+	border: 1px solid black;
+	visibility: hidden;
+	transition: 0.3s linear 0.4s;
+}
+.button-4:hover::after {
+	visibility: visible;
+}
+.card {
+	width: 150px;
+	height: 250px;
+	position: relative;
+	perspective: 1000px;
+	margin-bottom: 30px;
+}
+.front,
+.back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transition: 1s;
+	backface-visibility: hidden;
+}
+img {
+	width: 100%;
+}
+.front {
+	transform: rotateY(0deg);
+}
+.back {
+	transform: rotateY(180deg);
+}
+.card:hover .front {
+	transform: rotateY(-180deg);
+}
+.card:hover .back {
+	transform: rotateY(0deg);
+}
+.menu__button {
+	display: block;
+	background-color: rgb(111, 111, 219);
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	position: relative;
+}
+.menu__button span {
+	position: absolute;
+	top: 24px;
+	left: 15px;
+	height: 2px;
+	width: 20px;
+	background-color: white;
+}
+.menu__button span::before,
+.menu__button span::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 20px;
+	background-color: white;
+	transition: 0.2s;
+}
+.menu__button span::before {
+	transform: translateY(-5px);
+}
+.menu__button span::after {
+	transform: translateY(5px);
+}
+.menu__button span:hover {
+	height: 0;
+} 
+.menu__button span:hover::before {
+	transform: rotate(45deg);
+}
+.menu__button span:hover::after {
+	transform: rotate(-45deg);	
+}
