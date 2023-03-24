@@ -1,0 +1,291 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,500,700,900&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	line-height: 1.67;
+	font-weight: 300;	
+	color: #495057;
+	background: url("../img/main.jpg") center no-repeat;
+	background-size: cover;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 100;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 200;
+}
+.header__container {
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+	min-height: 97px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+	color: rgba(248, 249, 250, 0.5);
+	line-height: 2.08;
+	align-items: center;
+}
+.header__logo:hover {	
+	transform: scale(1.1);
+}
+.header__logo {
+	transition-duration: 0.3s;
+}
+.header__logo img {
+	vertical-align: middle;
+}
+.menu__items {
+	display: flex;
+	gap: 25px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.menu__item {
+	line-height: 2.08;
+}
+.menu__item a {
+	transition: color 0.3s ease 0s;
+}
+.menu__item a:hover {
+	color: #F8F9FA;
+	border-bottom: 2px solid #DDBEA9;
+}
+.menu__item--arrow {
+	position: relative;
+}
+.menu__item--arrow::after {
+	content: "";
+	background-image: url("../img/arrow.svg");
+	width: 8px;
+	height: 4.85px;
+	position: absolute;
+	top: 11px;
+	right: -12px;
+}
+/* как сделать так, чтобы в gap был включен размер псевдоэлемта, по макету надо, чтобы расстояние было по 25рх, но из-за псевдоэлементов расстояние между Inspiration и Courses стало меньше */
+
+.menu__item--search {
+	align-items: center;
+	vertical-align: middle;
+}
+.menu__item--search img {
+	height: 12px;
+	width: 12px;
+	vertical-align: middle;
+}
+.menu__item--search a:hover {
+	border-bottom: 0;
+}
+.menu__item--search img:hover {
+	transform: scale(1.3);
+}
+.article {
+	padding-top: 233px; 
+	/*по макету было 330рх, я записала 330-97=233, 97 - высота header, я правильно сделала? если оставить 330рх, фоновая картинка повторяется*/
+	padding-bottom: 40px;
+	color: #E5E5E5;
+}
+.article__subtitle:not(:last-child),
+.article__title:not(:last-child) {
+	margin-bottom: 15px;
+}
+.article__title {
+	color: #F8F9FA;
+	max-width: 605px;
+}
+.title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+}
+.article__text {
+	margin-bottom: 40px;
+}
+.article__number {
+	text-align: end;
+}
+.article__number::before {
+	content: "";
+	width: 44.01px;
+	height: 0px;
+	border: 0.5px solid #F8F9FA;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.block {
+	background-color: #E5E5E5;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.block__header {
+	line-height: 2.08;
+	margin-bottom: 44px;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.block__items {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.block__item--light {
+	color: rgba(73, 80, 87, 0.5);
+}
+.block__cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	row-gap: 45px;
+	margin-bottom: 60px;
+}
+.block__column {
+	padding: 0 15px;
+	flex: 0 1 33.33%;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	max-width: 393px;
+	flex: 0 1 393px;
+}
+.card__img {
+	position: relative;
+	margin-bottom: 30px;
+}
+.card__img img {
+	max-width: 100%;
+}
+.block__creative {
+	position: absolute;
+	right: 29.5px;
+	top: 30px;
+	background: rgba(33, 37, 41, 0.3);
+	border-radius: 3px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 20px;
+	text-transform: uppercase;
+	padding: 2px 12.09px 3px 12.77px;
+	z-index: 2;
+	color: #F8F9FA;
+}
+.info__subtitle,
+.info__title {
+	margin-bottom: 15px;
+}
+.info__title {
+	color: #212529;
+}
+.info__text {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #c4c4c4;
+}
+.info__author {
+	padding-top: 15px;
+}
+.block__button {
+	display: flex;
+	justify-content: center;
+}
+.block__button a {
+	min-width: 178px;
+	text-align: center;
+	display: inline-block;
+	color: #F8F9FA;
+	font-weight: 500;
+	line-height: 2.08;
+	background: #212529;
+	border-radius: 3px;
+	padding: 7px 50px 8px 49px;
+	transition: box-shadow 0.3s;
+}
+.block__button a:hover {
+	box-shadow: 1px 1px 7px #212529;
+}
+@media (max-width: 1200px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}	
+	.article {
+		padding-top: 150px;
+	}
+	.article__title,
+	.article__text {
+		max-width: 400px;
+	}	
+}
+@media (max-width: 992px) {
+	[class*="__container"] {
+		max-width: 750px;
+	}	
+	.article {
+		padding-top: 100px;
+	}
+	.article__title,
+	.article__text {
+		max-width: 350px;
+	}	
+	.block__column {
+		flex: 0 1 50%;
+	}
+}
+@media (max-width: 768px) {
+	[class*="__container"] {
+		max-width: 450px;
+	}	
+	.article__title,
+	.article__text {
+		max-width: 400px;
+	}	
+	.block__cards {
+		justify-content: center;
+	}
+	.block__column {
+		flex: 0 1 100%;
+	}	
+}
+@media (max-width: 480px) {
+	[class*="__container"] {
+		max-width: none;
+	}	
+	.article {
+		padding-top: 50px;
+	}
+	.block {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.block__items {
+		flex-direction: column;
+		row-gap: 2px;
+	}
+	.block__header {
+		margin-bottom: 20px;
+	}
+	.block__cards {
+		margin-bottom: 40px;
+	}
+}
