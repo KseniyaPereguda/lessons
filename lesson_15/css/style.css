@@ -1,0 +1,274 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,500,700,900&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #333333;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.page__block {
+	padding-top: 50px;
+	margin-bottom: 150px;
+}
+.subtitle {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #000000;
+	text-transform: uppercase;
+	position: relative;
+}
+.subtitle::after {
+	content: "";
+	width: 39%;
+	left: 136px;
+	top: 11px;
+	display: block;
+	border-bottom: 2px solid #000000;
+	position: absolute;
+}
+.block__subtitle {
+	margin-bottom: 40px;
+}
+.block__achievement {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+}
+.block__item {
+	display: flex;
+	gap: 40px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.block__image {
+	flex: 0 0 62%;
+	overflow: hidden;
+}
+.block__image img {
+	max-width: 100%;
+	transition: transform 0.8s;
+}
+.block__image img:hover{
+	transform: scale(1.05);
+}
+.block__info {
+	align-self: center;
+	flex: 0 0 28%;
+}
+.title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4;
+}
+/* .info__link {
+	transition: text-decoration 0.3s;
+} */
+/* text-decoration нельзя анимировать? */
+.info__link:hover {
+	text-decoration: underline;
+}
+.info__title:not(:last-child) {
+	margin-bottom: 20px;
+} 
+.text {
+	color: #9C9C9C;
+}
+.minimalist {
+	padding-bottom: 100px;
+	color: #000000;
+}
+.main-title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.4;
+}
+.minimalist__main-title {
+	margin-bottom: 40px;
+	text-align: center;
+}
+.minimalist__paragraph {
+	text-align: center;
+	max-width: 43%;
+	margin: 0 auto;
+	margin-bottom: 53px;
+}
+.minimalist__img {
+	margin-bottom: 100px;
+}
+.minimalist__img img {
+	max-width: 100%;
+	transition: transform 0.8s;
+}
+.minimalist__img img:hover {
+	transform: scale(1.02);
+}
+.minimalist__part {
+	margin-bottom: 81px;
+	display: flex;
+	gap: 32px;
+}
+.part__left,
+.part__right {
+	flex: 0 0 48.7%;
+}
+.left__title:not(:last-child), 
+.right__title:not(:last-child) {
+	margin-bottom: 24px;
+}
+.title:hover {
+	text-decoration: underline;
+}
+.left__text {
+	margin-bottom: 60px;
+}
+.left__footer {
+	display: flex;
+	gap: 80px;
+}
+.right__paragraphs {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.minimalist__gallery {
+	display: flex;
+	row-gap: 32px;
+	flex-direction: column;
+}
+.minimalist__photos {
+	display: flex;
+	margin: 0 -16px;
+}
+.minimalist__column {
+	padding: 0 16px;
+}
+.minimalist__photo {
+	flex: 0 0 50%;
+}
+.minimalist__photo img,
+.minimalist__image img {
+	max-width: 100%;
+	transition: transform 0.8s;
+}
+.minimalist__photo img:hover,
+.minimalist__image img:hover {
+	transform: scale(1.02);
+}
+.minimalist__image {
+	align-self: center;
+}
+@media (max-width: 1200px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}	
+	.page__block {
+		margin-bottom: 100px;
+	}
+	.block__item {
+		gap: 20px;
+	}
+	.block__image {
+		flex: 0 0 55%;
+	}
+	.block__info {
+		flex: 0 0 40%;
+	}
+	.main-title {
+		font-size: 46px;
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 992px) {
+	[class*="__container"] {
+		max-width: 750px;
+	}	
+	.block__item {
+		flex-direction: column-reverse;
+	}
+	.info__title {
+		text-align: center;
+	}
+	.page__block {
+		margin-bottom: 60px;
+	}
+	.main-title {
+		margin-bottom: 25px;
+	}
+	.minimalist__paragraph {
+		max-width: 60%;
+		margin-bottom: 30px;
+	}
+	.minimalist__img {
+		margin-bottom: 50px;
+	}
+	.minimalist__part {
+		flex-direction: column;
+		gap: 50px;
+	}
+	.left__text {
+		margin-bottom: 20px;
+	}
+	.right__paragraphs {
+		gap: 20px;
+	}
+	.minimalist__part {
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 768px) {
+	[class*="__container"] {
+		max-width: 450px;
+	}
+	.page__block {
+		margin-bottom: 50px;
+	}
+	.main-title {
+		font-size: 38px;
+	}
+	.minimalist__paragraph {
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	.left__footer {
+		flex-direction: column;
+		gap: 5px;
+	}
+	.minimalist {
+		padding-bottom: 50px;
+	}	
+}
+@media (max-width: 480px) {
+	[class*="__container"] {
+		max-width: none;
+	}
+	.page__block {
+		margin-bottom: 40px;
+	}
+	.main-title {
+		font-size: 32px;
+	}
+	.minimalist__photos {
+		flex-wrap: wrap;
+		row-gap: 32px;
+	}
+	.minimalist__column {
+		flex: 0 0 100%;
+	} /*получились картинки разные по высоте, по идее надо делать, чтобы были одинаковые, тогда как это правильно сделать? или вообще надо было оставлять по две картики в строчке как было в макете изначально?*/
+} 
