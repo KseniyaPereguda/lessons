@@ -70,19 +70,22 @@ body {
 	border-bottom: 2px solid #DDBEA9;
 }
 .menu__item--arrow {
-	position: relative;
+	display: flex;
+	gap: 5px;
 }
-.menu__item--arrow::after {
+.menu__arrow img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+/* .menu__item--arrow::after {
 	content: "";
 	background-image: url("../img/arrow.svg");
 	width: 8px;
 	height: 4.85px;
 	position: absolute;
 	top: 11px;
-	right: -12px;
-}
-/* как сделать так, чтобы в gap был включен размер псевдоэлемта, по макету надо, чтобы расстояние было по 25рх, но из-за псевдоэлементов расстояние между Inspiration и Courses стало меньше */
-
+	right: -3px;
+} */
 .menu__item--search {
 	align-items: center;
 	vertical-align: middle;
@@ -99,7 +102,7 @@ body {
 	transform: scale(1.3);
 }
 .article {
-	padding-top: 233px; 
+	padding-top: 330px; 
 	/*по макету было 330рх, я записала 330-97=233, 97 - высота header, я правильно сделала? если оставить 330рх, фоновая картинка повторяется*/
 	padding-bottom: 40px;
 	color: #E5E5E5;
@@ -161,21 +164,22 @@ body {
 	margin-bottom: 60px;
 }
 .block__column {
+	display: flex;
 	padding: 0 15px;
 	flex: 0 1 33.33%;
 }
 .card {
 	display: flex;
 	flex-direction: column;
-	max-width: 393px;
-	flex: 0 1 393px;
+	/* max-width: 393px; */
+	/* flex: 0 0 393px; */
 }
 .card__img {
 	position: relative;
 	margin-bottom: 30px;
 }
 .card__img img {
-	max-width: 100%;
+	width: 100%;
 }
 .block__creative {
 	position: absolute;
@@ -192,6 +196,11 @@ body {
 	z-index: 2;
 	color: #F8F9FA;
 }
+.card__info {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
 .info__subtitle,
 .info__title {
 	margin-bottom: 15px;
@@ -202,6 +211,7 @@ body {
 .info__text {
 	padding-bottom: 15px;
 	border-bottom: 1px solid #c4c4c4;
+	flex: 1 0 auto;
 }
 .info__author {
 	padding-top: 15px;
